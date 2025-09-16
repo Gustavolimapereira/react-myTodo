@@ -1,11 +1,17 @@
+import { BrowserRouter, Route, Routes } from "react-router";
+import PageComponents from "./pages/page-components";
 
 
 function App() {
 
   return (
-    <>
-      <p>olá mundo</p>
-    </>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/components" element={<PageComponents/>}>
+
+      </Route>
+    </Routes>
+    </BrowserRouter>
   )
 }
 
