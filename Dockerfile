@@ -28,7 +28,7 @@ COPY --from=builder /app/dist /usr/share/nginx/html
 # Copia configuração customizada (opcional, se precisar de SPA routing)
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Expõe a porta 3030
+# Expõe a porta 80
 EXPOSE 3030
 
 # Comando de inicialização
